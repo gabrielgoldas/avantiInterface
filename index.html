@@ -21,6 +21,8 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
     rel="stylesheet">
+  <!-- Script -->
+  <script src="./src/script/index.js" defer></script>
 </head>
 
 <body>
@@ -93,23 +95,25 @@
       </div>
     </section>
 
-    <!-- Releases -->
+    <!-- Releases One -->
     <section class="release-section">
-      <h3>Lançamentos</h3>
-      <a href="...">Ver mais</a>
-      <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="title-release">
+        <h3>Lançamentos</h3>
+        <a href="...">Ver mais</a>
+      </div>
+      <div id="carouselOne" class="carousel slide">
         <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-            class="active custom-button" aria-current="true" aria-label="Slide 1"></button>
-          <button class="custom-button" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          <button type="button" data-bs-target="#carouselOne" data-bs-slide-to="0" class="active custom-button"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button class="custom-button" type="button" data-bs-target="#carouselOne" data-bs-slide-to="1"
             aria-label="Slide 2"></button>
-          <button class="custom-button" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          <button class="custom-button" type="button" data-bs-target="#carouselOne" data-bs-slide-to="2"
             aria-label="Slide 3"></button>
-          <button class="custom-button" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+          <button class="custom-button" type="button" data-bs-target="#carouselOne" data-bs-slide-to="3"
             aria-label="Slide 4"></button>
-          <button class="custom-button" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+          <button class="custom-button" type="button" data-bs-target="#carouselOne" data-bs-slide-to="4"
             aria-label="Slide 5"></button>
-          <button class="custom-button" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+          <button class="custom-button" type="button" data-bs-target="#carouselOne" data-bs-slide-to="5"
             aria-label="Slide 6"></button>
         </div>
         <div class="carousel-inner">
@@ -180,13 +184,11 @@
             </div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselOne" data-bs-slide="prev">
           <i class="fa-solid fa-arrow-left arrow-carousel"></i>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselOne" data-bs-slide="next">
           <i class="fa-solid fa-arrow-right arrow-carousel"></i>
           <span class="visually-hidden">Next</span>
         </button>
@@ -203,8 +205,10 @@
           felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
         </p>
         <p>
-          Cras dignissim est et pellentesque tincidunt. Praesent bibendum quis velit a aliquam. Ut vestibulum turpis eget
-          mi iaculis ullamcorper. Curabitur nec metus sed tortor sollicitudin porta nec eu enim. Ut fermentum scelerisque
+          Cras dignissim est et pellentesque tincidunt. Praesent bibendum quis velit a aliquam. Ut vestibulum turpis
+          eget
+          mi iaculis ullamcorper. Curabitur nec metus sed tortor sollicitudin porta nec eu enim. Ut fermentum
+          scelerisque
           tortor mollis volutpat. Mauris iaculis magna nisl, vel porttitor augue placerat et.
         </p>
       </div>
@@ -216,119 +220,258 @@
       <div class="localization-content">
         <h1>LOREM IPSUM</h1>
         <div class="localization-item">
-          <button>
-            <img src="./src/public/icons/localization-icon.png" alt="">
-          </button>
-          <p>
-            Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam
+          <img src="./src/public/icons/localization-icon.png" alt="">
+          <div>
+            Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
+            quam
             felis, ultricies nec, pellentesque eu, pretium quis, sem.
-          </p>
+          </div>
         </div>
         <div class="localization-item">
-          <button>
-            <img src="./src/public/icons/localization-icon.png" alt="">
-          </button>
-          <p>
-            Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam
+          <img src="./src/public/icons/localization-icon.png" alt="">
+          <div>
+            Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
+            quam
             felis, ultricies nec, pellentesque eu, pretium quis, sem.
-          </p>
+          </div>
         </div>
         <div class="localization-item">
-          <button>
-            <img src="./src/public/icons/localization-icon.png" alt="">
-          </button>
-          <p>
-            Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam
+          <img src="./src/public/icons/localization-icon.png" alt="">
+          <div>
+            Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
+            quam
             felis, ultricies nec, pellentesque eu, pretium quis, sem.
-          </p>
+          </div>
         </div>
       </div>
     </section>
 
-    <section>
+    <!-- Description -->
+    <section class="description-section">
       <img src="./src/public/avanti-mug.png" alt="Imagem de uma xícara da Avanti">
-      <h1>LOREM IPSUM</h1>
-      <p>
-        Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam
-        felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-      </p>
-      <p>
-        Cras dignissim est et pellentesque tincidunt. Praesent bibendum quis velit a aliquam. Ut vestibulum turpis eget
-        mi iaculis ullamcorper. Curabitur nec metus sed tortor sollicitudin porta nec eu enim. Ut fermentum scelerisque
-        tortor mollis volutpat. Mauris iaculis magna nisl, vel porttitor augue placerat et.
-      </p>
+      <div class="descriptions">
+        <h1>LOREM IPSUM</h1>
+        <p>
+          Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam
+          felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+        </p>
+        <p>
+          Cras dignissim est et pellentesque tincidunt. Praesent bibendum quis velit a aliquam. Ut vestibulum turpis
+          eget
+          mi iaculis ullamcorper. Curabitur nec metus sed tortor sollicitudin porta nec eu enim. Ut fermentum
+          scelerisque
+          tortor mollis volutpat. Mauris iaculis magna nisl, vel porttitor augue placerat et.
+        </p>
+      </div>
     </section>
 
-    <section>
+    <!-- Releases Two -->
+    <section class="release-section">
+      <div class="title-release">
+        <h3>Lançamentos</h3>
+        <a href="...">Ver mais</a>
+      </div>
+      <div id="carouselTwo" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselTwo" data-bs-slide-to="0" class="active custom-button"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button class="custom-button" type="button" data-bs-target="#carouselTwo" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button class="custom-button" type="button" data-bs-target="#carouselTwo" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+          <button class="custom-button" type="button" data-bs-target="#carouselTwo" data-bs-slide-to="3"
+            aria-label="Slide 4"></button>
+          <button class="custom-button" type="button" data-bs-target="#carouselTwo" data-bs-slide-to="4"
+            aria-label="Slide 5"></button>
+          <button class="custom-button" type="button" data-bs-target="#carouselTwo" data-bs-slide-to="5"
+            aria-label="Slide 6"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="card">
+              <img src="./src/public/man.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card">
+              <img src="./src/public/man.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card">
+              <img src="./src/public/man.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card">
+              <img src="./src/public/man.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card">
+              <img src="./src/public/man.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card">
+              <img src="./src/public/man.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselTwo" data-bs-slide="prev">
+          <i class="fa-solid fa-arrow-left arrow-carousel"></i>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselTwo" data-bs-slide="next">
+          <i class="fa-solid fa-arrow-right arrow-carousel"></i>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Img Contact -->
+    <section class="img-contact">
       <img src="./src/public/avanti-room.png" alt="Sala da Avanti">
       <h3>Entre em contato conosco e verifique a disponibilidade para sua região!</h3>
     </section>
 
-    <section>
+    <!-- Newsletter -->
+    <section class="newsletter-section">
       <h2>Cadastre-se na nossa <a href="...">newsletter</a></h2>
-      <form>
-        <input type="text" placeholder="Digite seu nome">
-        <input type="text" placeholder="Digite seu e-mail">
-        <p>Estou de acordo com a <a href="...">Política de Privacidade</a></p>
-        <button>Cadastrar</button>
+      <form class="newsletter-form">
+        <input class="input-text" type="text" placeholder="Digite seu nome">
+        <input class="input-text" type="text" placeholder="Digite seu e-mail">
+        <div class="checkbox">
+          <input type="checkbox" id="check-btn" name="termos">
+          <label for="check1">Estou de acordo com a <a href="...">Política de Privacidade</label>
+        </div>
+        <button type="button" class="btn btn-primary w-100">Cadastrar</button>
       </form>
     </section>
 
     <footer>
-      <img src="./src/public/logo.png" alt="Logo da Avanti">
-      <button>
-        <i class="fa-brands fa-instagram"></i>
-      </button>
-      <button>
-        <i class="fa-brands fa-facebook-f"></i>
-      </button>
-      <button>
-        <i class="fa-brands fa-youtube"></i>
-      </button>
-      <button>
-        <i class="fa-brands fa-tiktok"></i>
-      </button>
-      <div>
-        <h3>Institucional</h3>
-        <i class="fa-solid fa-chevron-down arrow-down"></i>
-        <i class="fa-solid fa-chevron-up arrow-up"></i>
-      </div>
-      <div>
-        <h3>Central de ajuda</h3>
-        <i class="fa-solid fa-chevron-down arrow-down"></i>
-        <i class="fa-solid fa-chevron-up arrow-up"></i>
-      </div>
-      <div>
-        <h3>Atendimento</h3>
-        <i class="fa-solid fa-chevron-down arrow-down"></i>
-        <i class="fa-solid fa-chevron-up arrow-up"></i>
+      <div class="links">
+        <img src="./src/public/logo.png" alt="Logo da Avanti">
+        <ul class="social-icons">
+          <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+          <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+          <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+          <li><a href=""><i class="fa-brands fa-tiktok"></i></a></li>
+        </ul>
       </div>
 
-      <div>
-        <img src="./src/public/icons/amex.png" alt="Logo Amex">
+      <!-- Arrows Section -->
+      <section class="arrows-section">
+        <div class="arrows-div">
+          <div class="arrows-text">
+            <h4>Institucional</h4>
+            <i class="fa-solid fa-chevron-down arrow arrow-down"></i>
+            <i class="fa-solid fa-chevron-up arrow arrow-up"></i>
+          </div>
+          <ul class="arrows-list">
+            <li>Sobre Nós</li>
+            <li>Nossas lojas</li>
+            <li>Privacidade e Segurnaça</li>
+            <li>Termos e Condições</li>
+          </ul>
+        </div>
+        
+        <div class="arrows-div">
+          <div class="arrows-text">
+            <h4>Central de ajuda</h4>
+            <i class="fa-solid fa-chevron-down arrow arrow-down"></i>
+            <i class="fa-solid fa-chevron-up arrow arrow-up"></i>
+          </div>
+          <ul class="arrows-list">
+            <li>Fale Conosco</li>
+            <li>Frete e Entrega</li>
+            <li>Trocas e Devoluções</li>
+            <li>Formas de Pagamento</li>
+            <li>FAQ</li>
+          </ul>
+        </div>
+        <div class="arrows-div">
+          <div class="arrows-text">
+            <h4>Atendimento</h4>
+            <i class="fa-solid fa-chevron-down arrow arrow-down"></i>
+            <i class="fa-solid fa-chevron-up arrow arrow-up"></i>
+          </div>
+          <ul class="arrows-list">
+            <li><b>Telefone:</b> (00) 1234-5678</li>
+            <li><b>E-mail:</b> exemplo@exemplo.com.br</li>
+            <li><b>Horário de atendimento:</b>
+              <ul>
+                <li>Segunda e Sábado 07h00 às 23h00</li>
+                <li>Domingos e Feriados 07h00 às 21h00</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Payment Methods -->
+      <div class="payment-methods">
+        <img src="https://cdn-icons-png.flaticon.com/128/493/493771.png" alt="Logo Amex">
         <img src="./src/public/icons/master.png" alt="Logo Master">
-        <img src="./src/public/icons/visa.png" alt="Logo Visa">
+        <img src="https://cdn3.iconfinder.com/data/icons/remixicon-logos/24/visa-line-256.png" alt="Logo Visa">
         <img src="./src/public/icons/hipercard.png" alt="Logo Hipercard">
         <img src="./src/public/icons/cielo.png" alt="Logo Cielo">
-        <img src="./src/public/icons/diners-club.png" alt="Logo Diners Club">
-        <img src="./src/public/icons/paypal.png" alt="Logo Paypal">
-        <img src="./src/public/icons/pix.png" alt="Logo Pix">
+        <img src="https://cdn-icons-png.flaticon.com/128/5968/5968148.png" alt="Logo Diners Club">
+        <img src="https://cdn-icons-png.flaticon.com/128/38/38971.png" alt="Logo Paypal">
+        <img src="https://cdn3.iconfinder.com/data/icons/font-awesome-brands/512/pix-64.png" alt="Logo Pix">
         <img src="./src/public/icons/boleto.png" alt="Logo Boleto">
 
       </div>
 
-      <p>
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
-        dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci.
-      </p>
-
-      <div>
-        <img src="./src/public/lets-encrypt.png" alt="">
-        <img src="./src/public/vtex-certified.png" alt="">
-        <img src="./src/public/logo.png" alt="">
-        <img src="./src/public/vtex.png" alt="">
+      <div class="last-section">
+        <p>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+          dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci.
+        </p>
+  
+        <div class="last-section-images">
+          <img src="./src/public/lets-encrypt.png" alt="">
+          <img src="./src/public/vtex-certified.png" alt="">
+          <img src="./src/public/logo.png" alt="">
+          <img src="./src/public/vtex.png" alt="">
+        </div>
       </div>
-
     </footer>
   </main>
 
