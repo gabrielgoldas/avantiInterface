@@ -24,11 +24,15 @@
   <!-- Script -->
   <script src="./src/script/index.js" defer></script>
   <script src="./src/script/mobileNavbar.js" defer></script>
+  <script src="./src/script/search.js" defer></script>
 </head>
 
 <body>
   <header>
     <!-- Navbar -->
+    <div class="discount">Ganhe <div id="discount-value">R$10,00</div> de desconto no seu primeiro pedido. Utilize o
+      cupom <div id="discount-coupon">DESCONTO10</div>
+    </div>
     <nav class="navbar grid-template-areas-1 grid-template-areas-2">
       <div class="div-toggle">
         <div class="all-categories">
@@ -391,10 +395,9 @@
         </button>
       </div>
 
-      <form class="div-search d-flex w-100 search-container" role="search">
-        <input class="search-input form-control me-2" type="search" placeholder="Digite o que você procura"
-          aria-label="Search">
-        <button class="btn search-button" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+      <form class="div-search search-container" role="search">
+        <input class="search-input" placeholder="Digite o que você procura">
+        <button class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
       </form>
     </nav>
   </header>
@@ -402,150 +405,154 @@
   <main class="main">
     <!-- Main image -->
     <section class="main-section">
-      <img id="main-image" src="./src/public/chair.png" alt="Cadeira com roupas dobradas em cima">
-      <div id="main-image-description">
-        <div class="title-row">
-          <h1 id="title-super">SUPER</h1>
-          <h1 id="title-sale">SALE</h1>
+      <div class="main-image-div">
+        <img id="main-image" src="./src/public/chair.png" alt="Cadeira com roupas dobradas em cima">
+        <div id="main-image-description">
+          <div class="title-row">
+            <h1 id="title-super">SUPER</h1>
+            <h1 id="title-sale">SALE</h1>
+          </div>
+          <p>ITENS SELECIONADOS COM ATÉ</p>
+          <h2>50%OFF</h2>
         </div>
-        <p>ITENS SELECIONADOS COM ATÉ</p>
-        <h2>50%OFF</h2>
       </div>
     </section>
 
     <!-- Releases One -->
     <section class="release-section">
-      <div class="title-release">
-        <h3>Lançamentos</h3>
-        <a href="...">Ver mais</a>
-      </div>
-      <div id="carouselOne" class="carousel slide">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselOne" data-bs-slide-to="0"
-            class="active custom-button text-bg-dark" aria-current="true" aria-label="Slide 1"></button>
-          <button class="custom-button text-bg-dark" type="button" data-bs-target="#carouselOne" data-bs-slide-to="1"
-            aria-label="Slide 2"></button>
-          <button class="custom-button text-bg-dark" type="button" data-bs-target="#carouselOne" data-bs-slide-to="2"
-            aria-label="Slide 3"></button>
-          <button class="custom-button text-bg-dark" type="button" data-bs-target="#carouselOne" data-bs-slide-to="3"
-            aria-label="Slide 4"></button>
-          <button class="custom-button text-bg-dark" type="button" data-bs-target="#carouselOne" data-bs-slide-to="4"
-            aria-label="Slide 5"></button>
-          <button class="custom-button text-bg-dark" type="button" data-bs-target="#carouselOne" data-bs-slide-to="5"
-            aria-label="Slide 6"></button>
+      <div class="release-div">
+        <div class="title-release">
+          <h3>Lançamentos</h3>
+          <a href="...">Ver mais</a>
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="card">
-              <img src="./src/public/man.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-                <div class="card-description">
-                  <div class="card-prices">
-                    <p class="original-price">R$ 100,00</p>
-                    <h3 class="discounted-price">R$79,90</h3>
+        <div id="carouselOne" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselOne" data-bs-slide-to="0"
+              class="active custom-button text-bg-dark" aria-current="true" aria-label="Slide 1"></button>
+            <button class="custom-button text-bg-dark" type="button" data-bs-target="#carouselOne" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button class="custom-button text-bg-dark" type="button" data-bs-target="#carouselOne" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+            <button class="custom-button text-bg-dark" type="button" data-bs-target="#carouselOne" data-bs-slide-to="3"
+              aria-label="Slide 4"></button>
+            <button class="custom-button text-bg-dark" type="button" data-bs-target="#carouselOne" data-bs-slide-to="4"
+              aria-label="Slide 5"></button>
+            <button class="custom-button text-bg-dark" type="button" data-bs-target="#carouselOne" data-bs-slide-to="5"
+              aria-label="Slide 6"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="card">
+                <img src="./src/public/man.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                  <div class="card-description">
+                    <div class="card-prices">
+                      <p class="original-price">R$ 100,00</p>
+                      <h3 class="discounted-price">R$79,90</h3>
+                    </div>
+                    <p class="discounted-percent">10% OFF</p>
                   </div>
-                  <p class="discounted-percent">10% OFF</p>
+                  <p class="installment">Ou em até <b>10x de R$ 7,90</b></p>
+                  <a href="#" class="btn btn-primary w-100">Comprar</a>
                 </div>
-                <p class="installment">Ou em até <b>10x de R$ 7,90</b></p>
-                <a href="#" class="btn btn-primary w-100">Comprar</a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <img src="./src/public/man.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                  <div class="card-description">
+                    <div class="card-prices">
+                      <p class="original-price">R$ 100,00</p>
+                      <h3 class="discounted-price">R$79,90</h3>
+                    </div>
+                    <p class="discounted-percent">10% OFF</p>
+                  </div>
+                  <p class="installment">Ou em até <b>10x de R$ 7,90</b></p>
+                  <a href="#" class="btn btn-primary w-100">Comprar</a>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <img src="./src/public/man.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                  <div class="card-description">
+                    <div class="card-prices">
+                      <p class="original-price">R$ 100,00</p>
+                      <h3 class="discounted-price">R$79,90</h3>
+                    </div>
+                    <p class="discounted-percent">10% OFF</p>
+                  </div>
+                  <p class="installment">Ou em até <b>10x de R$ 7,90</b></p>
+                  <a href="#" class="btn btn-primary w-100">Comprar</a>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <img src="./src/public/man.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                  <div class="card-description">
+                    <div class="card-prices">
+                      <p class="original-price">R$ 100,00</p>
+                      <h3 class="discounted-price">R$79,90</h3>
+                    </div>
+                    <p class="discounted-percent">10% OFF</p>
+                  </div>
+                  <p class="installment">Ou em até <b>10x de R$ 7,90</b></p>
+                  <a href="#" class="btn btn-primary w-100">Comprar</a>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <img src="./src/public/man.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                  <div class="card-description">
+                    <div class="card-prices">
+                      <p class="original-price">R$ 100,00</p>
+                      <h3 class="discounted-price">R$79,90</h3>
+                    </div>
+                    <p class="discounted-percent">10% OFF</p>
+                  </div>
+                  <p class="installment">Ou em até <b>10x de R$ 7,90</b></p>
+                  <a href="#" class="btn btn-primary w-100">Comprar</a>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <img src="./src/public/man.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                  <div class="card-description">
+                    <div class="card-prices">
+                      <p class="original-price">R$ 100,00</p>
+                      <h3 class="discounted-price">R$79,90</h3>
+                    </div>
+                    <p class="discounted-percent">10% OFF</p>
+                  </div>
+                  <p class="installment">Ou em até <b>10x de R$ 7,90</b></p>
+                  <a href="#" class="btn btn-primary w-100">Comprar</a>
+                </div>
               </div>
             </div>
           </div>
-          <div class="carousel-item">
-            <div class="card">
-              <img src="./src/public/man.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-                <div class="card-description">
-                  <div class="card-prices">
-                    <p class="original-price">R$ 100,00</p>
-                    <h3 class="discounted-price">R$79,90</h3>
-                  </div>
-                  <p class="discounted-percent">10% OFF</p>
-                </div>
-                <p class="installment">Ou em até <b>10x de R$ 7,90</b></p>
-                <a href="#" class="btn btn-primary w-100">Comprar</a>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="card">
-              <img src="./src/public/man.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-                <div class="card-description">
-                  <div class="card-prices">
-                    <p class="original-price">R$ 100,00</p>
-                    <h3 class="discounted-price">R$79,90</h3>
-                  </div>
-                  <p class="discounted-percent">10% OFF</p>
-                </div>
-                <p class="installment">Ou em até <b>10x de R$ 7,90</b></p>
-                <a href="#" class="btn btn-primary w-100">Comprar</a>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="card">
-              <img src="./src/public/man.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-                <div class="card-description">
-                  <div class="card-prices">
-                    <p class="original-price">R$ 100,00</p>
-                    <h3 class="discounted-price">R$79,90</h3>
-                  </div>
-                  <p class="discounted-percent">10% OFF</p>
-                </div>
-                <p class="installment">Ou em até <b>10x de R$ 7,90</b></p>
-                <a href="#" class="btn btn-primary w-100">Comprar</a>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="card">
-              <img src="./src/public/man.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-                <div class="card-description">
-                  <div class="card-prices">
-                    <p class="original-price">R$ 100,00</p>
-                    <h3 class="discounted-price">R$79,90</h3>
-                  </div>
-                  <p class="discounted-percent">10% OFF</p>
-                </div>
-                <p class="installment">Ou em até <b>10x de R$ 7,90</b></p>
-                <a href="#" class="btn btn-primary w-100">Comprar</a>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="card">
-              <img src="./src/public/man.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-                <div class="card-description">
-                  <div class="card-prices">
-                    <p class="original-price">R$ 100,00</p>
-                    <h3 class="discounted-price">R$79,90</h3>
-                  </div>
-                  <p class="discounted-percent">10% OFF</p>
-                </div>
-                <p class="installment">Ou em até <b>10x de R$ 7,90</b></p>
-                <a href="#" class="btn btn-primary w-100">Comprar</a>
-              </div>
-            </div>
-          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselOne" data-bs-slide="prev">
+            <i class="fa-solid fa-arrow-left arrow-carousel"></i>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselOne" data-bs-slide="next">
+            <i class="fa-solid fa-arrow-right arrow-carousel"></i>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselOne" data-bs-slide="prev">
-          <i class="fa-solid fa-arrow-left arrow-carousel"></i>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselOne" data-bs-slide="next">
-          <i class="fa-solid fa-arrow-right arrow-carousel"></i>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
     </section>
 
@@ -621,131 +628,133 @@
 
     <!-- Releases Two -->
     <section class="release-section">
-      <div class="title-release">
-        <h3>Lançamentos</h3>
-        <a href="...">Ver mais</a>
-      </div>
-      <div id="carouselTwo" class="carousel slide">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselTwo" data-bs-slide-to="0"
-            class="active custom-button text-bg-dark" aria-current="true" aria-label="Slide 1"></button>
-          <button class="custom-button text-bg-dark" type="button" data-bs-target="#carouselTwo" data-bs-slide-to="1"
-            aria-label="Slide 2"></button>
-          <button class="custom-button text-bg-dark" type="button" data-bs-target="#carouselTwo" data-bs-slide-to="2"
-            aria-label="Slide 3"></button>
-          <button class="custom-button text-bg-dark" type="button" data-bs-target="#carouselTwo" data-bs-slide-to="3"
-            aria-label="Slide 4"></button>
-          <button class="custom-button text-bg-dark" type="button" data-bs-target="#carouselTwo" data-bs-slide-to="4"
-            aria-label="Slide 5"></button>
-          <button class="custom-button text-bg-dark" type="button" data-bs-target="#carouselTwo" data-bs-slide-to="5"
-            aria-label="Slide 6"></button>
+      <div class="release-div">
+        <div class="title-release">
+          <h3>Lançamentos</h3>
+          <a href="...">Ver mais</a>
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="card">
-              <img src="./src/public/man.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-                <div class="card-description">
-                  <div class="card-prices">
-                    <p class="original-price">R$ 100,00</p>
-                    <h3 class="discounted-price">R$79,90</h3>
+        <div id="carouselTwo" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselTwo" data-bs-slide-to="0"
+              class="active custom-button text-bg-dark" aria-current="true" aria-label="Slide 1"></button>
+            <button class="custom-button text-bg-dark" type="button" data-bs-target="#carouselTwo" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button class="custom-button text-bg-dark" type="button" data-bs-target="#carouselTwo" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+            <button class="custom-button text-bg-dark" type="button" data-bs-target="#carouselTwo" data-bs-slide-to="3"
+              aria-label="Slide 4"></button>
+            <button class="custom-button text-bg-dark" type="button" data-bs-target="#carouselTwo" data-bs-slide-to="4"
+              aria-label="Slide 5"></button>
+            <button class="custom-button text-bg-dark" type="button" data-bs-target="#carouselTwo" data-bs-slide-to="5"
+              aria-label="Slide 6"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="card">
+                <img src="./src/public/man.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                  <div class="card-description">
+                    <div class="card-prices">
+                      <p class="original-price">R$ 100,00</p>
+                      <h3 class="discounted-price">R$79,90</h3>
+                    </div>
+                    <p class="discounted-percent">10% OFF</p>
                   </div>
-                  <p class="discounted-percent">10% OFF</p>
+                  <p class="installment">Ou em até <b>10x de R$ 7,90</b></p>
+                  <a href="#" class="btn btn-primary w-100">Comprar</a>
                 </div>
-                <p class="installment">Ou em até <b>10x de R$ 7,90</b></p>
-                <a href="#" class="btn btn-primary w-100">Comprar</a>
               </div>
             </div>
-          </div>
-          <div class="carousel-item">
-            <div class="card">
-              <img src="./src/public/man.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-                <div class="card-description">
-                  <div class="card-prices">
-                    <p class="original-price">R$ 100,00</p>
-                    <h3 class="discounted-price">R$79,90</h3>
+            <div class="carousel-item">
+              <div class="card">
+                <img src="./src/public/man.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                  <div class="card-description">
+                    <div class="card-prices">
+                      <p class="original-price">R$ 100,00</p>
+                      <h3 class="discounted-price">R$79,90</h3>
+                    </div>
+                    <p class="discounted-percent">10% OFF</p>
                   </div>
-                  <p class="discounted-percent">10% OFF</p>
+                  <p class="installment">Ou em até <b>10x de R$ 7,90</b></p>
+                  <a href="#" class="btn btn-primary w-100">Comprar</a>
                 </div>
-                <p class="installment">Ou em até <b>10x de R$ 7,90</b></p>
-                <a href="#" class="btn btn-primary w-100">Comprar</a>
               </div>
             </div>
-          </div>
-          <div class="carousel-item">
-            <div class="card">
-              <img src="./src/public/man.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-                <div class="card-description">
-                  <div class="card-prices">
-                    <p class="original-price">R$ 100,00</p>
-                    <h3 class="discounted-price">R$79,90</h3>
+            <div class="carousel-item">
+              <div class="card">
+                <img src="./src/public/man.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                  <div class="card-description">
+                    <div class="card-prices">
+                      <p class="original-price">R$ 100,00</p>
+                      <h3 class="discounted-price">R$79,90</h3>
+                    </div>
+                    <p class="discounted-percent">10% OFF</p>
                   </div>
-                  <p class="discounted-percent">10% OFF</p>
+                  <p class="installment">Ou em até <b>10x de R$ 7,90</b></p>
+                  <a href="#" class="btn btn-primary w-100">Comprar</a>
                 </div>
-                <p class="installment">Ou em até <b>10x de R$ 7,90</b></p>
-                <a href="#" class="btn btn-primary w-100">Comprar</a>
               </div>
             </div>
-          </div>
-          <div class="carousel-item">
-            <div class="card">
-              <img src="./src/public/man.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-                <div class="card-description">
-                  <div class="card-prices">
-                    <p class="original-price">R$ 100,00</p>
-                    <h3 class="discounted-price">R$79,90</h3>
+            <div class="carousel-item">
+              <div class="card">
+                <img src="./src/public/man.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                  <div class="card-description">
+                    <div class="card-prices">
+                      <p class="original-price">R$ 100,00</p>
+                      <h3 class="discounted-price">R$79,90</h3>
+                    </div>
+                    <p class="discounted-percent">10% OFF</p>
                   </div>
-                  <p class="discounted-percent">10% OFF</p>
+                  <p class="installment">Ou em até <b>10x de R$ 7,90</b></p>
+                  <a href="#" class="btn btn-primary w-100">Comprar</a>
                 </div>
-                <p class="installment">Ou em até <b>10x de R$ 7,90</b></p>
-                <a href="#" class="btn btn-primary w-100">Comprar</a>
               </div>
             </div>
-          </div>
-          <div class="carousel-item">
-            <div class="card">
-              <img src="./src/public/man.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-                <div class="card-description">
-                  <div class="card-prices">
-                    <p class="original-price">R$ 100,00</p>
-                    <h3 class="discounted-price">R$79,90</h3>
+            <div class="carousel-item">
+              <div class="card">
+                <img src="./src/public/man.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                  <div class="card-description">
+                    <div class="card-prices">
+                      <p class="original-price">R$ 100,00</p>
+                      <h3 class="discounted-price">R$79,90</h3>
+                    </div>
+                    <p class="discounted-percent">10% OFF</p>
                   </div>
-                  <p class="discounted-percent">10% OFF</p>
+                  <p class="installment">Ou em até <b>10x de R$ 7,90</b></p>
+                  <a href="#" class="btn btn-primary w-100">Comprar</a>
                 </div>
-                <p class="installment">Ou em até <b>10x de R$ 7,90</b></p>
-                <a href="#" class="btn btn-primary w-100">Comprar</a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <img src="./src/public/man.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
               </div>
             </div>
           </div>
-          <div class="carousel-item">
-            <div class="card">
-              <img src="./src/public/man.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselTwo" data-bs-slide="prev">
+            <i class="fa-solid fa-arrow-left arrow-carousel"></i>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselTwo" data-bs-slide="next">
+            <i class="fa-solid fa-arrow-right arrow-carousel"></i>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselTwo" data-bs-slide="prev">
-          <i class="fa-solid fa-arrow-left arrow-carousel"></i>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselTwo" data-bs-slide="next">
-          <i class="fa-solid fa-arrow-right arrow-carousel"></i>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
     </section>
 
@@ -770,64 +779,73 @@
     </section>
 
     <footer>
-      <div class="links">
-        <img src="./src/public/logo.png" alt="Logo da Avanti">
-        <ul class="social-icons">
-          <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
-          <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
-          <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
-          <li><a href=""><i class="fa-brands fa-tiktok"></i></a></li>
-        </ul>
+      <div class="links-arrows-div">
+        <!-- Links -->
+        <div class="links">
+          <img src="./src/public/logo.png" alt="Logo da Avanti">
+          <ul class="social-icons">
+            <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-tiktok"></i></a></li>
+          </ul>
+        </div>
+
+        <!-- Arrows Section -->
+        <section class="arrows-section">
+          <div class="arrows-div">
+            <div class="arrows-text">
+              <h4>Institucional</h4>
+              <button class="arrow-button" type="button">
+                <i class="fa-solid fa-chevron-down arrow arrow-down"></i>
+                <i class="fa-solid fa-chevron-up arrow arrow-up"></i>
+              </button>
+            </div>
+            <ul class="arrows-list">
+              <li>Sobre Nós</li>
+              <li>Nossas lojas</li>
+              <li>Privacidade e Segurnaça</li>
+              <li>Termos e Condições</li>
+            </ul>
+          </div>
+
+          <div class="arrows-div">
+            <div class="arrows-text">
+              <h4>Central de ajuda</h4>
+              <button class="arrow-button" type="button">
+                <i class="fa-solid fa-chevron-down arrow arrow-down"></i>
+                <i class="fa-solid fa-chevron-up arrow arrow-up"></i>
+              </button>
+            </div>
+            <ul class="arrows-list">
+              <li>Fale Conosco</li>
+              <li>Frete e Entrega</li>
+              <li>Trocas e Devoluções</li>
+              <li>Formas de Pagamento</li>
+              <li>FAQ</li>
+            </ul>
+          </div>
+          <div class="arrows-div">
+            <div class="arrows-text">
+              <h4>Atendimento</h4>
+              <button class="arrow-button" type="button">
+                <i class="fa-solid fa-chevron-down arrow arrow-down"></i>
+                <i class="fa-solid fa-chevron-up arrow arrow-up"></i>
+              </button>
+            </div>
+            <ul class="arrows-list">
+              <li><b>Telefone:</b> (00) 1234-5678</li>
+              <li><b>E-mail:</b> exemplo@exemplo.com.br</li>
+              <li><b>Horário de atendimento:</b>
+                <ul>
+                  <li>Segunda e Sábado 07h00 às 23h00</li>
+                  <li>Domingos e Feriados 07h00 às 21h00</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </section>
       </div>
-
-      <!-- Arrows Section -->
-      <section class="arrows-section">
-        <div class="arrows-div">
-          <div class="arrows-text">
-            <h4>Institucional</h4>
-            <i class="fa-solid fa-chevron-down arrow arrow-down"></i>
-            <i class="fa-solid fa-chevron-up arrow arrow-up"></i>
-          </div>
-          <ul class="arrows-list">
-            <li>Sobre Nós</li>
-            <li>Nossas lojas</li>
-            <li>Privacidade e Segurnaça</li>
-            <li>Termos e Condições</li>
-          </ul>
-        </div>
-
-        <div class="arrows-div">
-          <div class="arrows-text">
-            <h4>Central de ajuda</h4>
-            <i class="fa-solid fa-chevron-down arrow arrow-down"></i>
-            <i class="fa-solid fa-chevron-up arrow arrow-up"></i>
-          </div>
-          <ul class="arrows-list">
-            <li>Fale Conosco</li>
-            <li>Frete e Entrega</li>
-            <li>Trocas e Devoluções</li>
-            <li>Formas de Pagamento</li>
-            <li>FAQ</li>
-          </ul>
-        </div>
-        <div class="arrows-div">
-          <div class="arrows-text">
-            <h4>Atendimento</h4>
-            <i class="fa-solid fa-chevron-down arrow-down"></i>
-            <i class="fa-solid fa-chevron-up arrow-up"></i>
-          </div>
-          <ul class="arrows-list">
-            <li><b>Telefone:</b> (00) 1234-5678</li>
-            <li><b>E-mail:</b> exemplo@exemplo.com.br</li>
-            <li><b>Horário de atendimento:</b>
-              <ul>
-                <li>Segunda e Sábado 07h00 às 23h00</li>
-                <li>Domingos e Feriados 07h00 às 21h00</li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </section>
 
       <!-- Payment Methods -->
       <div class="payment-methods">

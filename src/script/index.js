@@ -1,15 +1,16 @@
 const arrowsText = document.querySelectorAll(".arrows-text")
+const arrowsBtn = document.querySelectorAll(".arrow-button")
 
-arrowsText.forEach(arrowText => {
-  arrowText.addEventListener('click', () => toggleArrowDiv(arrowText))
+arrowsBtn.forEach(arrowBtn => {
+  arrowBtn.addEventListener('click', (ev) => toggleArrowDiv(ev.currentTarget))
 })
 
 
-function toggleArrowDiv(arrowText) {
-  const arrowDiv = arrowText.parentElement;
-  const arrowsList = arrowDiv.querySelector(".arrows-list");
-  const arrowDown = arrowDiv.querySelector(".arrow-down")
-  const arrowUp = arrowDiv.querySelector(".arrow-up")
+function toggleArrowDiv(button) {
+  const arrowDiv = button.closest(".arrows-text")
+  const arrowsList = arrowDiv.nextElementSibling;
+  const arrowDown = button.querySelector(".arrow-down")
+  const arrowUp = button.querySelector(".arrow-up")
 
   if (arrowsList.classList.contains("active")) {
     arrowsList.classList.remove("active")
