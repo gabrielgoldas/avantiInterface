@@ -23,60 +23,334 @@
     rel="stylesheet">
   <!-- Script -->
   <script src="./src/script/index.js" defer></script>
+  <script src="./src/script/mobileNavbar.js" defer></script>
 </head>
 
 <body>
   <header>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
+    <nav class="navbar grid-template-areas-1 grid-template-areas-2">
+      <div class="div-toggle">
+        <div class="all-categories">
+          <button class="navbar-toggler-btn" type="button">
+            <span id="toggler-btn" class="active"><i class="fa-solid fa-bars"></i></span>
+            <span id="exit-btn"><i class="fa-solid fa-xmark"></i></i></span>
+          </button>
+          <div id="all-categories-text">Todas as categorias</div>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-          aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- Logo -->
-        <img src="./src/public/logo.png" alt="">
+          <!--  -->
+          <ul class="nav-list-row">
+            <li class="department-row">
+              Departamento
 
-        <button id="mobile-btn">
-          <img src="./src/public/icons/cart-shopping.png" alt="cart shopping">
-        </button>
+              <ul class="category-list-row active">
+                <div class="categories">
+                  <li>Categoria</li>
+                  <li>Categoria</li>
+                  <li>Categoria</li>
+                  <li>Categoria</li>
+                  <li>Categoria</li>
+                  <li>Categoria</li>
+                  <li>Categoria</li>
+                  <li>Categoria</li>
+                  <li>Categoria</li>
+                  <li>Categoria</li>
+                  <li>Categoria</li>
+                </div>
+                <div class="categories-img">
+                  <div class="img-category">
+                    <img src="src/public/avanti-mug-2.png" alt="">
+                  </div>
+                  <div id="categories-img-text">Confira os Produtos Que acabaram De chegar</div>
+                  <button class="btn btn-outline-light" type="button">VER TODOS</button>
+                </div>
+              </ul>
 
-        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
-          aria-labelledby="offcanvasNavbarLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li>
-                    <hr class="dropdown-divider">
-                  </li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
+            </li>
+            <li class="department-row">
+              Departamento
+
+              <ul class="category-list-row">
+                <div class="categories">
+                  <li>Categoria</li>
+                  <li>Categoria</li>
+                  <li>Categoria</li>
+                  <li>Categoria</li>
+                  <li>Categoria</li>
+                  <li>Categoria</li>
+                  <li>Categoria</li>
+                  <li>Categoria</li>
+                  <li>Categoria</li>
+                  <li>Categoria</li>
+                  <li>Categoria</li>
+                </div>
+                <div class="categories-img">
+                  <div class="img-category">
+                    <img src="src/public/avanti-mug-2.png" alt="">
+                  </div>
+                  <div id="categories-img-text">Confira os Produtos Que acabaram De chegar</div>
+                  <button class="btn btn-outline-light" type="button">VER TODOS</button>
+                </div>
+              </ul>
+
+            </li>
+            <li class="department-row">
+              Departamento
+
+              <ul class="category-list-row">
+                <div class="categories">
+                  <li>Categoria</li>
+                  <li>Categoria</li>
+                  <li>Categoria</li>
+                  <li>Categoria</li>
+                  <li>Categoria</li>
+                  <li>Categoria</li>
+                  <li>Categoria</li>
+                  <li>Categoria</li>
+                  <li>Categoria</li>
+                  <li>Categoria</li>
+                  <li>Categoria</li>
+                </div>
+                <div class="categories-img">
+                  <div class="img-category">
+                    <img src="src/public/avanti-mug-2.png" alt="">
+                  </div>
+                  <div id="categories-img-text">Confira os Produtos Que acabaram De chegar</div>
+                  <button class="btn btn-outline-light" type="button">VER TODOS</button>
+                </div>
+              </ul>
+
+            </li>
+            <li class="department-row">
+              Departamento
+
+              <ul class="category-list-row">
+                <div class="categories">
+                  <li>Categoria</li>
+                  <li>Categoria</li>
+                  <li>Categoria</li>
+                  <li>Categoria</li>
+                  <li>Categoria</li>
+                  <li>Categoria</li>
+                  <li>Categoria</li>
+                  <li>Categoria</li>
+                  <li>Categoria</li>
+                  <li>Categoria</li>
+                  <li>Categoria</li>
+                </div>
+                <div class="categories-img">
+                  <div class="img-category">
+                    <img src="src/public/avanti-mug-2.png" alt="">
+                  </div>
+                  <div id="categories-img-text">Confira os Produtos Que acabaram De chegar</div>
+                  <button class="btn btn-outline-light" type="button">VER TODOS</button>
+                </div>
+              </ul>
+
+            </li>
+            <li class="department-row">
+              Departamento
+
+              <ul class="category-list-row">
+                <div class="categories">
+                  <li>Categoria</li>
+                  <li>Categoria</li>
+                  <li>Categoria</li>
+                  <li>Categoria</li>
+                  <li>Categoria</li>
+                  <li>Categoria</li>
+                  <li>Categoria</li>
+                  <li>Categoria</li>
+                  <li>Categoria</li>
+                  <li>Categoria</li>
+                  <li>Categoria</li>
+                </div>
+                <div class="categories-img">
+                  <div class="img-category">
+                    <img src="src/public/avanti-mug-2.png" alt="">
+                  </div>
+                  <div id="categories-img-text">Confira os Produtos Que acabaram De chegar</div>
+                  <button class="btn btn-outline-light" type="button">VER TODOS</button>
+                </div>
+              </ul>
+
+            </li>
+          </ul>
         </div>
+
+        <!-- nav-list -->
+        <ul class="nav-list">
+          <li class="department">
+            Departamento
+            <i class="fa-solid fa-chevron-right"></i>
+            <ul class="category-list">
+              <div class="categories">
+                <li>Categoria</li>
+                <li>Categoria</li>
+                <li>Categoria</li>
+                <li>Categoria</li>
+                <li>Categoria</li>
+                <li>Categoria</li>
+                <li>Categoria</li>
+                <li>Categoria</li>
+                <li>Categoria</li>
+                <li>Categoria</li>
+                <li>Categoria</li>
+              </div>
+              <div class="categories-img">
+                <div class="img-category">
+                  <img src="src/public/avanti-mug-2.png" alt="">
+                </div>
+                <div id="categories-img-text">Confira os Produtos Que acabaram De chegar</div>
+                <button class="btn btn-outline-light" type="button">VER TODOS</button>
+              </div>
+            </ul>
+          </li>
+          <li class="department">
+            Departamento
+            <i class="fa-solid fa-chevron-right"></i>
+            <ul class="category-list">
+              <div class="categories">
+                <li>Categoria</li>
+                <li>Categoria</li>
+                <li>Categoria</li>
+                <li>Categoria</li>
+                <li>Categoria</li>
+                <li>Categoria</li>
+                <li>Categoria</li>
+                <li>Categoria</li>
+                <li>Categoria</li>
+                <li>Categoria</li>
+                <li>Categoria</li>
+                <li>Categoria</li>
+                <li>Categoria</li>
+                <li>Categoria</li>
+                <li>Categoria</li>
+                <li>Categoria</li>
+              </div>
+              <div class="categories-img">
+                <div class="img-category">
+                  <img src="src/public/avanti-mug-2.png" alt="">
+                </div>
+                <div id="categories-img-text">Confira os Produtos Que acabaram De chegar</div>
+                <button class="btn btn-outline-light" type="button">VER TODOS</button>
+              </div>
+            </ul>
+          </li>
+          <li class="department">
+            Departamento
+            <i class="fa-solid fa-chevron-right"></i>
+            <ul class="category-list">
+              <div class="categories">
+                <li>Categoria</li>
+                <li>Categoria</li>
+                <li>Categoria</li>
+                <li>Categoria</li>
+                <li>Categoria</li>
+                <li>Categoria</li>
+                <li>Categoria</li>
+                <li>Categoria</li>
+                <li>Categoria</li>
+                <li>Categoria</li>
+                <li>Categoria</li>
+                <li>Categoria</li>
+                <li>Categoria</li>
+                <li>Categoria</li>
+                <li>Categoria</li>
+                <li>Categoria</li>
+                <li>Categoria</li>
+                <li>Categoria</li>
+                <li>Categoria</li>
+                <li>Categoria</li>
+                <li>Categoria</li>
+              </div>
+              <div class="categories-img">
+                <div class="img-category">
+                  <img src="src/public/avanti-mug-2.png" alt="">
+                </div>
+                <div id="categories-img-text">Confira os Produtos Que acabaram De chegar</div>
+                <button class="btn btn-outline-light" type="button">VER TODOS</button>
+              </div>
+            </ul>
+          </li>
+          <li class="department">
+            Departamento
+            <i class="fa-solid fa-chevron-right"></i>
+            <ul class="category-list">
+              <div class="categories">
+                <li>Categoria</li>
+                <li>Categoria</li>
+                <li>Categoria</li>
+                <li>Categoria</li>
+                <li>Categoria</li>
+                <li>Categoria</li>
+                <li>Categoria</li>
+                <li>Categoria</li>
+                <li>Categoria</li>
+                <li>Categoria</li>
+                <li>Categoria</li>
+                <li>Categoria</li>
+                <li>Categoria</li>
+                <li>Categoria</li>
+                <li>Categoria</li>
+                <li>Categoria</li>
+                <li>Categoria</li>
+                <li>Categoria</li>
+                <li>Categoria</li>
+                <li>Categoria</li>
+              </div>
+              <div class="categories-img">
+                <div class="img-category">
+                  <img src="src/public/avanti-mug-2.png" alt="">
+                </div>
+                <div id="categories-img-text">Confira os Produtos Que acabaram De chegar</div>
+                <button class="btn btn-outline-light" type="button">VER TODOS</button>
+              </div>
+            </ul>
+          </li>
+          <li class="department">
+            Departamento
+            <i class="fa-solid fa-chevron-right"></i>
+            <ul class="category-list">
+              <div class="categories">
+                <li>Categoria</li>
+                <li>Categoria</li>
+                <li>Categoria</li>
+                <li>Categoria</li>
+                <li>Categoria</li>
+                <li>Categoria</li>
+              </div>
+              <div class="categories-img">
+                <div class="img-category">
+                  <img src="src/public/avanti-mug-2.png" alt="">
+                </div>
+                <div id="categories-img-text">Confira os Produtos Que acabaram De chegar</div>
+                <button class="btn btn-outline-light" type="button">VER TODOS</button>
+              </div>
+            </ul>
+          </li>
+
+        </ul>
       </div>
-      <form class="d-flex mt-3 w-100 p-2" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+
+      <div class="div-logo">
+        <a href="/"><img id="logo-avanti" src="./src/public/logo.png" alt="Logo Avanti"></a>
+      </div>
+
+      <div class="div-buttons">
+        <button id="navbar-person-btn">
+          <span id="person-btn"><i class="fa-solid fa-user-large"></i></span>
+        </button>
+        <div id="hello-client"><b>Olá, <br>Nome cliente</b></div>
+        <button id="navbar-cart-btn">
+          <span id="cart-btn"><i class="fa-solid fa-cart-shopping"></i></span>
+        </button>
+      </div>
+
+      <form class="div-search d-flex w-100 search-container" role="search">
+        <input class="search-input form-control me-2" type="search" placeholder="Digite o que você procura"
+          aria-label="Search">
+        <button class="btn search-button" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
       </form>
     </nav>
   </header>
@@ -103,17 +377,17 @@
       </div>
       <div id="carouselOne" class="carousel slide">
         <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselOne" data-bs-slide-to="0" class="active custom-button"
-            aria-current="true" aria-label="Slide 1"></button>
-          <button class="custom-button" type="button" data-bs-target="#carouselOne" data-bs-slide-to="1"
+          <button type="button" data-bs-target="#carouselOne" data-bs-slide-to="0"
+            class="active custom-button text-bg-dark" aria-current="true" aria-label="Slide 1"></button>
+          <button class="custom-button text-bg-dark" type="button" data-bs-target="#carouselOne" data-bs-slide-to="1"
             aria-label="Slide 2"></button>
-          <button class="custom-button" type="button" data-bs-target="#carouselOne" data-bs-slide-to="2"
+          <button class="custom-button text-bg-dark" type="button" data-bs-target="#carouselOne" data-bs-slide-to="2"
             aria-label="Slide 3"></button>
-          <button class="custom-button" type="button" data-bs-target="#carouselOne" data-bs-slide-to="3"
+          <button class="custom-button text-bg-dark" type="button" data-bs-target="#carouselOne" data-bs-slide-to="3"
             aria-label="Slide 4"></button>
-          <button class="custom-button" type="button" data-bs-target="#carouselOne" data-bs-slide-to="4"
+          <button class="custom-button text-bg-dark" type="button" data-bs-target="#carouselOne" data-bs-slide-to="4"
             aria-label="Slide 5"></button>
-          <button class="custom-button" type="button" data-bs-target="#carouselOne" data-bs-slide-to="5"
+          <button class="custom-button text-bg-dark" type="button" data-bs-target="#carouselOne" data-bs-slide-to="5"
             aria-label="Slide 6"></button>
         </div>
         <div class="carousel-inner">
@@ -121,10 +395,16 @@
             <div class="card">
               <img src="./src/public/man.png" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                <div class="card-description">
+                  <div class="card-prices">
+                    <p class="original-price">R$ 100,00</p>
+                    <h3 class="discounted-price">R$79,90</h3>
+                  </div>
+                  <p class="discounted-percent">10% OFF</p>
+                </div>
+                <p class="installment">Ou em até <b>10x de R$ 7,90</b></p>
+                <a href="#" class="btn btn-primary w-100">Comprar</a>
               </div>
             </div>
           </div>
@@ -132,10 +412,16 @@
             <div class="card">
               <img src="./src/public/man.png" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                <div class="card-description">
+                  <div class="card-prices">
+                    <p class="original-price">R$ 100,00</p>
+                    <h3 class="discounted-price">R$79,90</h3>
+                  </div>
+                  <p class="discounted-percent">10% OFF</p>
+                </div>
+                <p class="installment">Ou em até <b>10x de R$ 7,90</b></p>
+                <a href="#" class="btn btn-primary w-100">Comprar</a>
               </div>
             </div>
           </div>
@@ -143,10 +429,16 @@
             <div class="card">
               <img src="./src/public/man.png" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                <div class="card-description">
+                  <div class="card-prices">
+                    <p class="original-price">R$ 100,00</p>
+                    <h3 class="discounted-price">R$79,90</h3>
+                  </div>
+                  <p class="discounted-percent">10% OFF</p>
+                </div>
+                <p class="installment">Ou em até <b>10x de R$ 7,90</b></p>
+                <a href="#" class="btn btn-primary w-100">Comprar</a>
               </div>
             </div>
           </div>
@@ -154,10 +446,16 @@
             <div class="card">
               <img src="./src/public/man.png" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                <div class="card-description">
+                  <div class="card-prices">
+                    <p class="original-price">R$ 100,00</p>
+                    <h3 class="discounted-price">R$79,90</h3>
+                  </div>
+                  <p class="discounted-percent">10% OFF</p>
+                </div>
+                <p class="installment">Ou em até <b>10x de R$ 7,90</b></p>
+                <a href="#" class="btn btn-primary w-100">Comprar</a>
               </div>
             </div>
           </div>
@@ -165,10 +463,16 @@
             <div class="card">
               <img src="./src/public/man.png" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                <div class="card-description">
+                  <div class="card-prices">
+                    <p class="original-price">R$ 100,00</p>
+                    <h3 class="discounted-price">R$79,90</h3>
+                  </div>
+                  <p class="discounted-percent">10% OFF</p>
+                </div>
+                <p class="installment">Ou em até <b>10x de R$ 7,90</b></p>
+                <a href="#" class="btn btn-primary w-100">Comprar</a>
               </div>
             </div>
           </div>
@@ -176,10 +480,16 @@
             <div class="card">
               <img src="./src/public/man.png" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                <div class="card-description">
+                  <div class="card-prices">
+                    <p class="original-price">R$ 100,00</p>
+                    <h3 class="discounted-price">R$79,90</h3>
+                  </div>
+                  <p class="discounted-percent">10% OFF</p>
+                </div>
+                <p class="installment">Ou em até <b>10x de R$ 7,90</b></p>
+                <a href="#" class="btn btn-primary w-100">Comprar</a>
               </div>
             </div>
           </div>
@@ -273,17 +583,17 @@
       </div>
       <div id="carouselTwo" class="carousel slide">
         <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselTwo" data-bs-slide-to="0" class="active custom-button"
-            aria-current="true" aria-label="Slide 1"></button>
-          <button class="custom-button" type="button" data-bs-target="#carouselTwo" data-bs-slide-to="1"
+          <button type="button" data-bs-target="#carouselTwo" data-bs-slide-to="0"
+            class="active custom-button text-bg-dark" aria-current="true" aria-label="Slide 1"></button>
+          <button class="custom-button text-bg-dark" type="button" data-bs-target="#carouselTwo" data-bs-slide-to="1"
             aria-label="Slide 2"></button>
-          <button class="custom-button" type="button" data-bs-target="#carouselTwo" data-bs-slide-to="2"
+          <button class="custom-button text-bg-dark" type="button" data-bs-target="#carouselTwo" data-bs-slide-to="2"
             aria-label="Slide 3"></button>
-          <button class="custom-button" type="button" data-bs-target="#carouselTwo" data-bs-slide-to="3"
+          <button class="custom-button text-bg-dark" type="button" data-bs-target="#carouselTwo" data-bs-slide-to="3"
             aria-label="Slide 4"></button>
-          <button class="custom-button" type="button" data-bs-target="#carouselTwo" data-bs-slide-to="4"
+          <button class="custom-button text-bg-dark" type="button" data-bs-target="#carouselTwo" data-bs-slide-to="4"
             aria-label="Slide 5"></button>
-          <button class="custom-button" type="button" data-bs-target="#carouselTwo" data-bs-slide-to="5"
+          <button class="custom-button text-bg-dark" type="button" data-bs-target="#carouselTwo" data-bs-slide-to="5"
             aria-label="Slide 6"></button>
         </div>
         <div class="carousel-inner">
@@ -291,10 +601,16 @@
             <div class="card">
               <img src="./src/public/man.png" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                <div class="card-description">
+                  <div class="card-prices">
+                    <p class="original-price">R$ 100,00</p>
+                    <h3 class="discounted-price">R$79,90</h3>
+                  </div>
+                  <p class="discounted-percent">10% OFF</p>
+                </div>
+                <p class="installment">Ou em até <b>10x de R$ 7,90</b></p>
+                <a href="#" class="btn btn-primary w-100">Comprar</a>
               </div>
             </div>
           </div>
@@ -302,10 +618,16 @@
             <div class="card">
               <img src="./src/public/man.png" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                <div class="card-description">
+                  <div class="card-prices">
+                    <p class="original-price">R$ 100,00</p>
+                    <h3 class="discounted-price">R$79,90</h3>
+                  </div>
+                  <p class="discounted-percent">10% OFF</p>
+                </div>
+                <p class="installment">Ou em até <b>10x de R$ 7,90</b></p>
+                <a href="#" class="btn btn-primary w-100">Comprar</a>
               </div>
             </div>
           </div>
@@ -313,10 +635,16 @@
             <div class="card">
               <img src="./src/public/man.png" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                <div class="card-description">
+                  <div class="card-prices">
+                    <p class="original-price">R$ 100,00</p>
+                    <h3 class="discounted-price">R$79,90</h3>
+                  </div>
+                  <p class="discounted-percent">10% OFF</p>
+                </div>
+                <p class="installment">Ou em até <b>10x de R$ 7,90</b></p>
+                <a href="#" class="btn btn-primary w-100">Comprar</a>
               </div>
             </div>
           </div>
@@ -324,10 +652,16 @@
             <div class="card">
               <img src="./src/public/man.png" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                <div class="card-description">
+                  <div class="card-prices">
+                    <p class="original-price">R$ 100,00</p>
+                    <h3 class="discounted-price">R$79,90</h3>
+                  </div>
+                  <p class="discounted-percent">10% OFF</p>
+                </div>
+                <p class="installment">Ou em até <b>10x de R$ 7,90</b></p>
+                <a href="#" class="btn btn-primary w-100">Comprar</a>
               </div>
             </div>
           </div>
@@ -335,10 +669,16 @@
             <div class="card">
               <img src="./src/public/man.png" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                <div class="card-description">
+                  <div class="card-prices">
+                    <p class="original-price">R$ 100,00</p>
+                    <h3 class="discounted-price">R$79,90</h3>
+                  </div>
+                  <p class="discounted-percent">10% OFF</p>
+                </div>
+                <p class="installment">Ou em até <b>10x de R$ 7,90</b></p>
+                <a href="#" class="btn btn-primary w-100">Comprar</a>
               </div>
             </div>
           </div>
@@ -411,7 +751,7 @@
             <li>Termos e Condições</li>
           </ul>
         </div>
-        
+
         <div class="arrows-div">
           <div class="arrows-text">
             <h4>Central de ajuda</h4>
@@ -429,8 +769,8 @@
         <div class="arrows-div">
           <div class="arrows-text">
             <h4>Atendimento</h4>
-            <i class="fa-solid fa-chevron-down arrow arrow-down"></i>
-            <i class="fa-solid fa-chevron-up arrow arrow-up"></i>
+            <i class="fa-solid fa-chevron-down arrow-down"></i>
+            <i class="fa-solid fa-chevron-up arrow-up"></i>
           </div>
           <ul class="arrows-list">
             <li><b>Telefone:</b> (00) 1234-5678</li>
@@ -464,7 +804,7 @@
           Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
           dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci.
         </p>
-  
+
         <div class="last-section-images">
           <img src="./src/public/lets-encrypt.png" alt="">
           <img src="./src/public/vtex-certified.png" alt="">
