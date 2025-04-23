@@ -1,5 +1,7 @@
 class MobileNavbar {
-  constructor(mobileMenu, navList, navLinks, exitBtn, togglerBtn, departmentBtn, categoryList) {
+  constructor(
+    mobileMenu, navList, navLinks, exitBtn, togglerBtn, departmentBtn, categoryList, departmentsBtnRow, categoryListRow
+  ) {
     this.mobileMenu = document.querySelector(mobileMenu)
     this.navList = document.querySelector(navList)
     this.navLinks = document.querySelector(navLinks)
@@ -9,10 +11,14 @@ class MobileNavbar {
     this.departmentsBtn = document.querySelectorAll(departmentBtn)
     this.categoryList = document.querySelectorAll(categoryList)
 
+    this.departmentsBtnRow = document.querySelectorAll(departmentsBtnRow)
+    this.categoryListRow = document.querySelectorAll(categoryListRow)
+
     this.activeClass = "active"
 
     this.handleClick = this.handleClick.bind(this)
     this.handleClickDp = this.handleClickDp.bind(this)
+    this.handleClickDpRow = this.handleClickDpRow.bind(this)
   }
 
   handleClick() {
@@ -26,6 +32,8 @@ class MobileNavbar {
     this.categoryList.forEach(category => {
       if (category.classList.contains("active")) {
         category.classList.remove("active")
+        category.parentElement.style.color = "#000";
+        category.parentElement.style.fontWeight = "400";
         this.navList.classList.toggle(this.activeClass)
         this.togglerBtn.classList.toggle(this.activeClass)
         this.exitBtn.classList.toggle(this.activeClass)
@@ -36,13 +44,42 @@ class MobileNavbar {
   handleClickDp(event) {
     document.querySelectorAll(".category-list.active").forEach(category => {
       category.classList.remove(this.activeClass);
+      category.parentElement.style.color = "#000";
+      category.parentElement.style.fontWeight = "400";
     });
 
     const department = event.currentTarget;
     const categoryList = department.querySelector(".category-list");
 
     if (categoryList) {
-      categoryList.classList.toggle(this.activeClass);
+      const isActive = categoryList.classList.toggle(this.activeClass);
+
+      if (isActive) {
+        categoryList.parentElement.style.color = "#005cff";
+        categoryList.parentElement.style.fontWeight = "700";
+      }
+    }
+  }
+
+  handleClickDpRow(event) {
+    const departmentRow = event.currentTarget;
+    const categoryListRow = departmentRow.querySelector(".category-list-row");
+
+    if (categoryListRow) {
+      const isActive = categoryListRow.classList.contains(this.activeClass);
+
+      document.querySelectorAll(".category-list-row.active").forEach(category => {
+        category.classList.remove(this.activeClass);
+        category.parentElement.style.color = "#000";
+        category.parentElement.style.fontWeight = "400";
+      });
+
+      if (!isActive) {
+        categoryListRow.classList.add(this.activeClass);
+        departmentRow.style.color = "#005cff";
+        departmentRow.style.fontWeight = "700";
+        categoryListRow.querySelector(".div-categories").style.color = "#000";
+      }
     }
   }
 
@@ -53,6 +90,12 @@ class MobileNavbar {
   addClickEventDepartmentBtn() {
     this.departmentsBtn.forEach(dpBtn => {
       dpBtn.addEventListener("click", this.handleClickDp)
+    })
+  }
+
+  addClickEventDepartmentBtnRow() {
+    this.departmentsBtnRow.forEach(dpBtnRow => {
+      dpBtnRow.addEventListener("click", this.handleClickDpRow)
     })
   }
 
@@ -69,6 +112,13 @@ class MobileNavbar {
     }
     return this
   }
+
+  initDepartmentBtnRow() {
+    if (this.departmentsBtnRow) {
+      this.addClickEventDepartmentBtnRow()
+    }
+    return this
+  }
 }
 
 const mobileNavbar = new MobileNavbar(
@@ -78,7 +128,10 @@ const mobileNavbar = new MobileNavbar(
   "#exit-btn",
   "#toggler-btn",
   ".department",
-  ".category-list"
+  ".category-list",
+  ".department-row",
+  ".category-list-row"
 );
 mobileNavbar.initMobileMenu()
 mobileNavbar.initDepartmentBtn()
+mobileNavbar.initDepartmentBtnRow()
