@@ -1,7 +1,7 @@
 # Avanti - Interface
 
 ## 📌 Visão Geral
-O Projeto 01 - Desenvolvimento do Layout tem como objetivo recriar um design proposto, utilizando HTML, CSS e JavaScript. O desafio envolve a criação de uma interface responsiva e interativa, garantindo que o layout funcione tanto na versão Desktop quanto na versão Mobile.
+O Projeto 01 - Desenvolvimento do Layout tem como objetivo recriar um design proposto, utilizando HTML, CSS e JavaScript. O desafio envolve a criação de uma interface responsiva e interativa, garantindo que o layout funcione tanto na versão Desktop quanto na versão Mobile.  
 Para tornar a experiência mais dinâmica, a aplicação conta com:
 - **Campo de busca interativo:** O usuário poderá digitar um termo de pesquisa e, ao clicar no botão da lupa, verá uma mensagem exibindo o conteúdo pesquisado.
 - **Carrosséis animados:** Utilização de bibliotecas para garantir uma navegação fluida entre os elementos do carrossel.
@@ -14,6 +14,7 @@ Durante o desenvolvimento desta aplicação, foram explorados os seguintes conce
 - **Frameworks CSS**, como **Bootstrap**, para facilitar estilizações avançadas.  
 - **Manipulação de elementos interativos**, como **campo de busca** e **carrosséis**.  
 - **Interatividade com JavaScript**, incluindo eventos de clique e resposta dinâmica.  
+- **Uso da biblioteca Swiper**, garantindo carrosséis responsivos e com transições suaves.  
 
 ## 🛠 Tecnologias Utilizadas
 Este projeto foi desenvolvido utilizando:
@@ -22,10 +23,10 @@ Este projeto foi desenvolvido utilizando:
 - **Bootstrap** - Framework para componentes responsivos e estilizados.
 - **Font Awesome** - Ícones personalizados.
 - **JavaScript** (opcional) - Para funcionalidades interativas.
+- **Swiper** - Biblioteca para carrosséis responsivos e animados.
 
 ## ⚙️ Funcionalidades  
-- **Campo de Busca Interativo** 
-- **Carrosséis Responsivos** 
+- **Campo de Busca Interativo**  
+- **Carrosséis Responsivos**  
 - **Responsividade Garantida**: Layout adaptável para **Mobile e Desktop**.  
 - **Uso de Frameworks CSS**
-
